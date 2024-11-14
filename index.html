@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibimbap</title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 30%;
+        border-radius: 5%;
+      }
+      .project {
+        background: radial-gradient(
+          328px at 2.9% 15%,
+          rgb(191, 224, 251) 0%,
+          rgb(232, 233, 251) 25.8%,
+          rgb(252, 239, 250) 50.8%,
+          rgb(234, 251, 251) 77.6%,
+          rgb(240, 251, 244) 100.7%
+        );
+      }
+      .learn {
+        text-decoration: none;
+        color: green;
+      }
+      .learn:hover {
+        text-decoration: underline;
+      }
+      .recipe {
+        text-decoration: none;
+        color: green;
+      }
+      .recipe:hover {
+        text-decoration: underline;
+      }
+      .coded {
+        text-decoration: none;
+        color: green;
+      }
+      .coded:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+      button {
+        border-radius: 30px;
+        margin: 0 auto;
+        display: block;
+        background-color: lightgoldenrodyellow;
+        border: 1px solid blueviolet;
+        color: green;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 17px 25px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 38, 89, 0.08) 15px 20px 15px 0;
+      }
+      button:hover {
+        color: #fff;
+        background: rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <h1>Bibimbap! (Korean Rice Bowl) 🍜</h1>
+      <h2>Delicious Hot or Cold!</h2>
+      <img
+        src="https://stellanspice.com/wp-content/uploads/2022/01/IMG_3246_jpg.jpg"
+        alt="Bibimbap"
+      />
+      <br />
+      <p>
+        <strong>Bibimbap,</strong> sometimes romanized as
+        <em>bi bim bap or bi bim bop,</em> is a Korean rice dish. The term bibim
+        means "mixing" and bap is cooked rice. It is served as a bowl of warm
+        white rice topped with namul and gochujang. Egg and sliced meat are
+        common additions, stirred together thoroughly just before eating.
+      </p>
+      <p>
+        <a
+          href="https://en.wikipedia.org/wiki/Bibimbap"
+          target="_blank"
+          class="learn"
+        >
+          Learn more on Wikipedia
+        </a>
+      </p>
+      <p>
+        If you want to learn how to make it from scratch here's the
+        <a
+          href="https://www.recipetineats.com/bibimbap/#wprm-recipe-container-37012"
+          target="_blank"
+          class="recipe"
+          >Recipe.
+        </a>
+      </p>
+      <br />
+      <button>👉🏼Preorder Now!👈🏼</button>
+      <br />
+      <p>
+        Done by
+        <a
+          href="https://www.linkedin.com/in/kellyvisagie93/"
+          target="_blank"
+          class="coded"
+        >
+          Kelly Visagie😎
+        </a>
+      </p>
+      <script>
+        function order() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email address?");
+          alert(
+            "Thank you for ordering, " +
+              name +
+              "!, We'll get back to you soon on " +
+              email
+          );
+        }
+        let orderButton = document.querySelector("button");
+        orderButton.addEventListener("click", order);
+      </script>
+    </div>
+  </body>
+</html>
